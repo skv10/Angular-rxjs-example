@@ -1,0 +1,30 @@
+<a routerLink="/" mat-button class="back">Back to Dashboard</a>
+<div class="center">
+    <section class="detail-description">
+        <h2 class="title">Of Operator</h2>
+        <p class="content">
+            The of operator in RxJS is a creation operator that allows you to create an Observable from one or more
+            values.
+            It is a simple way to emit a fixed number of synchronous values in sequence and then complete.
+        </p>
+
+        <h3 class="title">Features</h3>
+        <ul>
+            <li>Emits the provided values sequentially, one at a time.</li>
+            <li>Completes immediately after emitting all values.</li>
+            <li>Values can be of any type.</li>
+        </ul>
+
+
+        <img [src]="imageUrl">
+    </section>
+
+    <section class="example">
+        @for(option of arrOfOutput; track option){
+        <div class="output">
+            {{option}}
+        </div>
+        }
+
+    </section>
+</div>
