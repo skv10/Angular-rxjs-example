@@ -1,1 +1,25 @@
-<p>from works!</p>
+<a routerLink="/" mat-button class="back">Back to Dashboard</a>
+<div class="center">
+    <section class="detail-description">
+        <h2 class="title">From Operator</h2>
+        <p class="content mb-2">
+            The from operator in RxJS is a creation operator used to create an Observable from various types of
+            data sources, such as arrays, Promises, iterable objects, and more. It converts these data sources into
+            Observables that emit their values sequentially.
+        </p>
+
+        <img [src]="imageUrl">
+    </section>
+
+    <section class="example">
+        <h2 class="title">Example</h2>
+        <p>const from$ = from[1,2,3,4,5,6,7,8,9,10];</p>
+        <p>from$.subscribe(res => console.log(res))</p>
+        @for(option of arrOfOutput; track option){
+        <span class="output">
+            {{option}}
+        </span>
+        }
+
+    </section>
+</div>

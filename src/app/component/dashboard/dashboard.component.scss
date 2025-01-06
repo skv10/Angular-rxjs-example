@@ -1,4 +1,10 @@
 .group {
-    opacity: 0.5;
-    background-color: rgb(105, 240, 195);
+    background-color: #8daaed;
+    border-radius: 11px;
+    padding: 10px;
+
+    h3 {
+        text-align: center;
+        color: white
+    }
 }

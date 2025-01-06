@@ -14,7 +14,7 @@ export class OfComponent implements OnInit {
 
   of$ = of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).pipe(delay(4000));
 
-  imageUrl: string = "";
+  imageUrl: string = "images/of.png";
 
   arrOfOutput: number[] = [];
 

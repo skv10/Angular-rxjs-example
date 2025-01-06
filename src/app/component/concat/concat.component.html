@@ -1,1 +1,40 @@
-<p>concat works!</p>
+<a routerLink="/" mat-button class="back">Back to Dashboard</a>
+<div class="center">
+    <section class="detail-description">
+        <h2 class="title">Concat Operator</h2>
+        <p class="content mb-2">
+            In RxJS, the concat function is a combination operator that takes multiple Observables as input and
+            concatenates them sequentially,emitting values from one Observable only after the previous one has
+            completed.
+            This is particularly useful when you want to process streams of data in a strict sequence
+        </p>
+
+        <h3 class="title">Features</h3>
+        <ul>
+            <li>Sequential Execution: Observables are executed one after another. The next Observable starts only after
+                the current one completes.</li>
+            <li>Order Preservation: The values are emitted in the order of the input Observables.</li>
+            <li>Handles Completion: If an Observable does not complete, subsequent Observables will not start.</li>
+        </ul>
+
+
+        <img [src]="imageUrl">
+
+
+    </section>
+
+    <section class="example">
+        <h2 class="title">Example</h2>
+        <p>const obs1 = of('A', 'B').pipe(delay(1000)); // Emits after 1 second</p>
+        <p>const obs2 = of('C', 'D');</p>
+        <p>
+            concat(obs1, obs2).subscribe(res => console.log(res));
+        </p>
+        @for(option of arrOfOutput; track option){
+        <span class="output">
+            {{option}}
+        </span>
+        }
+
+    </section>
+</div>
